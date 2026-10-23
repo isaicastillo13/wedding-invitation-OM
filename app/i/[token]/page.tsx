@@ -15,7 +15,19 @@ export default async function InvitationPage({
   const { token } = await params;
   const invitacion = await prisma.invitacion.findUnique({
     where: { codigo: token },
-    include: { invitados: { orderBy: { orden: "asc" } } },
+    select: {
+      codigo: true,
+      cantidadPuestos: true,
+      fechaLimiteConfirmacion: true,
+      invitados: {
+        orderBy: { orden: "asc" },
+        select: {
+          id: true,
+          nombreCompleto: true,
+          asistira: true,
+        },
+      },
+    },
   });
 
   if (!invitacion) notFound();
