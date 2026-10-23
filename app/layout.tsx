@@ -1,29 +1,24 @@
 import type { Metadata } from "next";
-import { Pinyon_Script, Baskervville, Baskervville_SC } from "next/font/google";
+import { Cormorant_Garamond, Raleway } from "next/font/google";
 import "./globals.css";
 
 
-const pinyon = Pinyon_Script({
+const cormorant = Cormorant_Garamond ({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-script",
 });
 
-const marcellus = Baskervville({
+const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400","700"],
   variable: "--font-serif",
 });
 
-const marcellusSC = Baskervville_SC({
-  subsets: ["latin"],
-  weight: ["400","700"],
-  variable: "--font-serif-sc",
-});
 
 export const metadata: Metadata = {
-  title: "Boda Maria Alejandra y Franklin",
-  description: "Nuestro amor nos lleva al altar",
+  title: "Boda O|M",
+  description: "18 años de una historia escrita con amor, pruebas y perseverancia.",
 };
 
 export default function RootLayout({
@@ -34,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${pinyon.variable} ${marcellus.variable} ${marcellusSC.variable}  h-full antialiased`}
+      className={`${cormorant.variable} ${raleway.variable} h-full antialiased`}
     >
       <body className="flex flex-col min-h-full">{children}</body>
     </html>
