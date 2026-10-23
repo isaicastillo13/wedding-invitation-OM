@@ -43,12 +43,12 @@ export default function Intro() {
               className="object-cover object-[56%_center]"
             />
             <p className="max-w-xs text-wedding-base font-Cormorant_Garamond">
-              <span className="font-bold">Ceremonia Religiosa </span>
-              <br /> Parroquia Nuestra Señora del Carmen, Managua <br /> 6:00
-              P.M
+              <span className="font-bold">Ceremonia religiosa</span>
+              <br /> Parroquia Nuestra Señora del Carmen, Managua, Nicaragua.
+              <br /> 6:00 p. m.
             </p>
             <button className="px-6 py-3 uppercase rounded-md text-wedding-base bg-wedding-lineas font-Raleway">
-              Ver Ubicación
+              Ver ubicación
             </button>
           </div>
 
@@ -62,15 +62,15 @@ export default function Intro() {
             />
             <p className="max-w-xs text-wedding-base font-Cormorant_Garamond">
               <span className="font-bold">Recepción</span>
-              <br /> Recepción Hotel Crowne Plaza, Managua (Salón Ometepe )
-              <br /> 7:30
+              <br /> Hotel Crowne Plaza, Managua, Nicaragua (salón Ometepe).
+              <br /> 7:30 p. m.
             </p>
-             <button className="px-6 py-3 uppercase rounded-md bg-wedding-lineas font-Raleway text-wedding-base">
-              Ver Ubicación
+            <button className="px-6 py-3 uppercase rounded-md bg-wedding-lineas font-Raleway text-wedding-base">
+              Ver ubicación
             </button>
           </div>
 
-          <div className="flex flex-col items-center w-full gap-4 text-center">
+          <div className="flex flex-col items-center w-full gap-4 mb-4 text-center">
             <Image
               src={Icon_Calendar}
               alt="Foto de los novios"
@@ -79,12 +79,11 @@ export default function Intro() {
               className="object-cover object-[56%_center]"
             />
             <p className="max-w-xs text-wedding-base font-Cormorant_Garamond">
-              <span className="uppercase">SABADO</span>
+              <span className="uppercase">SÁBADO</span>
               <br /> <span className="text-3xl font-bold">05</span>
-              <br /> <span >de Diciembre 2026</span>
+              <br /> <span>de diciembre de 2026</span>
             </p>
           </div>
-          
         </div>
       </div>
     </section>

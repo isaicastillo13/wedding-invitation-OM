@@ -5,6 +5,7 @@ import BodaDatos from "@/components/invitation/BodaDatos";
 import Carrusel from "@/components/invitation/Carrusel";
 import DetallesCelebracion from "@/components/invitation/DetallesCelebracion";
 import Confirmacion from "@/components/invitation/Confirmacion";
+import EnvelopeReveal from "@/components/invitation/EnvelopeReveal";
 
 export default async function InvitationPage({
   params,
@@ -20,7 +21,7 @@ export default async function InvitationPage({
   if (!invitacion) notFound();
 
   return (
-    <main>
+    <EnvelopeReveal>
       <Hero />
       <BodaDatos />
       <Carrusel />
@@ -39,6 +40,6 @@ export default async function InvitationPage({
           }),
         )}
       />
-    </main>
+    </EnvelopeReveal>
   );
 }

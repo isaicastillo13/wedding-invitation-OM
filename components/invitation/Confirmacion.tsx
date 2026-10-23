@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import { FormEvent, useState } from "react";
-import { fechaLegible, fechaLimiteVencida } from "@/lib/fechaConfirmacion";
+import { fechaLimiteVencida } from "@/lib/fechaConfirmacion";
+
+const FECHA_LIMITE_TEXTO = "10 de noviembre";
 
 type InvitadoConfirmacion = {
   id: string;
@@ -38,9 +40,6 @@ export default function Confirmacion({
 
   const limiteVencido = fechaLimiteVencida(fechaLimiteConfirmacion);
   const excedePuestos = seleccionados.size > cantidadPuestos;
-  const fechaLimiteTexto = fechaLimiteConfirmacion
-    ? fechaLegible(fechaLimiteConfirmacion)
-    : null;
 
   const cambiarSeleccion = (id: string, marcado: boolean) => {
     setSeleccionados((actuales) => {
@@ -153,14 +152,10 @@ export default function Confirmacion({
 
           <p className="max-w-md mx-auto mt-3 text-lg leading-6 font-Raleway">
             Les agradeceremos confirmar su asistencia
-            {fechaLimiteTexto ? (
-              <>
-                <br />
-                antes del {fechaLimiteTexto}.
-              </>
-            ) : (
-              " a la brevedad."
-            )}
+            <>
+              <br />
+              antes del {FECHA_LIMITE_TEXTO}.
+            </>
           </p>
 
           <p className="mt-5 text-lg font-Raleway">Puestos reservados:</p>

@@ -26,7 +26,7 @@ export default function DetallesCelebracion() {
           Traje formal
         </p>
         <p className="max-w-md mx-auto mt-5 text-lg leading-6 font-Raleway">
-          Con cariño reservamos los siguientes colores para los novios y el
+          Con cariño, reservamos los siguientes colores para los novios y el
           cortejo:
         </p>
 
@@ -50,7 +50,7 @@ export default function DetallesCelebracion() {
         aria-hidden="true"
         className="w-32 h-px mx-auto mt-16 mb-5 bg-wedding-lineas"
       />
-      <h2 className="text-xl font-bold leading-7 font-Raleway">Regalos</h2>
+      <h3 className="text-lg font-bold leading-7 font-Raleway">Regalos</h3>
       <p className="mt-4 text-lg leading-6 font-Raleway">
         Lluvia de sobres en efectivo.
       </p>
@@ -79,7 +79,7 @@ export default function DetallesCelebracion() {
         <br />
         este gran momento en
         <br />
-        nuestras vidas
+        nuestras vidas.
       </p>
 
       <div className="flex items-center justify-center max-w-sm gap-5 mx-auto mt-7">
