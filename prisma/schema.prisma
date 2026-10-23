@@ -20,7 +20,6 @@ model Invitacion {
   nombreFamilia           String?           @map("nombre_familia")
   cantidadPuestos         Int               @default(1) @map("cantidad_puestos")
   estado                  EstadoInvitacion  @default(pendiente)
-  cantidadConfirmada      Int               @default(0) @map("cantidad_confirmada")
   telefono                String?           @map("telefono")
   mesa                    String?           @map("mesa")
   observacionesInternas   String?           @map("observaciones_internas")
