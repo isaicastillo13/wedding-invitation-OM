@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Icon_Church from "@/public/Icons/icon_MdiChurchOutline.svg";
-import Icon_Cheers from "@/public/Icons/icon_PhCheers.svg";
-import Icon_Calendar from "@/public/Icons/icon_MdiCalendar.svg";
+import Icon_Church from "@/public/Icons/Icon_MdiChurchOutline.svg";
+import Icon_Cheers from "@/public/Icons/Icon_PhCheers.svg";
+import Icon_Calendar from "@/public/Icons/Icon_MdiCalendar.svg";
 import CorazonDecorativo from "@/public/Icons/Icon_MdiHeart.svg";
 import { motion } from "framer-motion";
 
