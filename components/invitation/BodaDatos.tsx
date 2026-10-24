@@ -47,9 +47,15 @@ export default function Intro() {
               <br /> Parroquia Nuestra Señora del Carmen, Managua, Nicaragua.
               <br /> 6:00 p. m.
             </p>
-            <button className="px-6 py-3 uppercase rounded-md text-wedding-base bg-wedding-lineas font-Raleway">
+            
+            <a
+              href="https://share.google/z82yEPPt8JUWlQXPV"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 uppercase rounded-md text-wedding-base bg-wedding-lineas font-Raleway"
+            >
               Ver ubicación
-            </button>
+            </a>
           </div>
 
           <div className="flex flex-col items-center w-full gap-4 mb-4 text-center">
@@ -65,9 +71,14 @@ export default function Intro() {
               <br /> Hotel Crowne Plaza, Managua, Nicaragua (salón Ometepe).
               <br /> 7:30 p. m.
             </p>
-            <button className="px-6 py-3 uppercase rounded-md bg-wedding-lineas font-Raleway text-wedding-base">
+            <a
+              href="https://share.google/6cIhz43MmZ8iCOVgh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 uppercase rounded-md bg-wedding-lineas font-Raleway text-wedding-base"
+            >
               Ver ubicación
-            </button>
+            </a>
           </div>
 
           <div className="flex flex-col items-center w-full gap-4 mb-4 text-center">
