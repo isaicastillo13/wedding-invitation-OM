@@ -47,9 +47,9 @@ export default function Intro() {
               <br /> Parroquia Nuestra Señora del Carmen, Managua, Nicaragua.
               <br /> 6:00 p. m.
             </p>
-            
+
             <a
-              href="https://share.google/z82yEPPt8JUWlQXPV"
+              href="https://maps.app.goo.gl/CaPhAzd7UeqouPeVA"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 uppercase rounded-md text-wedding-base bg-wedding-lineas font-Raleway"
@@ -72,7 +72,7 @@ export default function Intro() {
               <br /> 7:30 p. m.
             </p>
             <a
-              href="https://share.google/6cIhz43MmZ8iCOVgh"
+              href="https://maps.app.goo.gl/4NAvC6qAzS4JdTu89"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 uppercase rounded-md bg-wedding-lineas font-Raleway text-wedding-base"
