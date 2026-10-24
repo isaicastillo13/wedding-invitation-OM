@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ReactNode, useCallback, useState } from "react";
+import { ReactNode, useCallback, useRef, useState } from "react";
 
 type EnvelopeRevealProps = {
   children: ReactNode;
@@ -9,13 +9,27 @@ type EnvelopeRevealProps = {
 
 export default function EnvelopeReveal({ children }: EnvelopeRevealProps) {
   const [abierto, setAbierto] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const abrirSobre = useCallback(() => {
-    setAbierto((actual) => (actual ? actual : true));
+    setAbierto((actual) => {
+      if (actual) return actual;
+
+      const audio = audioRef.current;
+      if (audio) {
+        void audio.play().catch((error: unknown) => {
+          console.error("No se pudo reproducir la canción de fondo.", error);
+        });
+      }
+
+      return true;
+    });
   }, []);
 
   return (
     <main className="relative bg-[#fcf4e8]">
+      <audio ref={audioRef} src="/cancionFondo.mp3" loop preload="auto" />
+
       <div
         className={`transition-opacity duration-500 ${
           abierto ? "opacity-100 delay-700" : "pointer-events-none opacity-0"
