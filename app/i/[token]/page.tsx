@@ -6,6 +6,7 @@ import Carrusel from "@/components/invitation/Carrusel";
 import DetallesCelebracion from "@/components/invitation/DetallesCelebracion";
 import Confirmacion from "@/components/invitation/Confirmacion";
 import EnvelopeReveal from "@/components/invitation/EnvelopeReveal";
+import ScrollReveal from "@/components/invitation/ScrollReveal";
 
 export default async function InvitationPage({
   params,
@@ -35,23 +36,32 @@ export default async function InvitationPage({
   return (
     <EnvelopeReveal>
       <Hero />
-      <BodaDatos />
-      <Carrusel />
-      <DetallesCelebracion />
-      <Confirmacion
-        codigo={invitacion.codigo}
-        cantidadPuestos={invitacion.cantidadPuestos}
-        fechaLimiteConfirmacion={
-          invitacion.fechaLimiteConfirmacion?.toISOString().slice(0, 10) ?? null
-        }
-        invitados={invitacion.invitados.map(
-          ({ id, nombreCompleto, asistira }) => ({
-            id,
-            nombreCompleto,
-            asistira,
-          }),
-        )}
-      />
+      <ScrollReveal>
+        <BodaDatos />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Carrusel />
+      </ScrollReveal>
+      <ScrollReveal>
+        <DetallesCelebracion />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Confirmacion
+          codigo={invitacion.codigo}
+          cantidadPuestos={invitacion.cantidadPuestos}
+          fechaLimiteConfirmacion={
+            invitacion.fechaLimiteConfirmacion?.toISOString().slice(0, 10) ??
+            null
+          }
+          invitados={invitacion.invitados.map(
+            ({ id, nombreCompleto, asistira }) => ({
+              id,
+              nombreCompleto,
+              asistira,
+            }),
+          )}
+        />
+      </ScrollReveal>
     </EnvelopeReveal>
   );
 }
